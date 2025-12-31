@@ -1,83 +1,72 @@
-# IMDB-Sentiment-Analysis-RNN
+# IMDB Sentiment Analysis RNN
 
-A **Deep Learning–based Sentiment Analysis project** that classifies IMDB movie reviews as **positive or negative** using a **Recurrent Neural Network (RNN)**.
+🎬 Deep Learning–based Sentiment Analysis to classify IMDB movie reviews as **positive** or **negative** using a **Recurrent Neural Network (RNN)**.
 
 ---
 
 ## 📌 Project Description
-This project focuses on understanding user sentiment from movie reviews by leveraging **Natural Language Processing (NLP)** techniques and **Recurrent Neural Networks**.  
-The model learns sequential patterns in text data to accurately predict the sentiment of unseen reviews.
-
-This project demonstrates practical knowledge of:
-- Text preprocessing
-- Sequence modeling
-- Neural network training
-- Model evaluation
+This project applies Natural Language Processing (NLP) and RNNs to learn patterns in text and predict sentiment from IMDB reviews. It demonstrates skills in text preprocessing, model training, evaluation, and exporting a trained model for use.
 
 ---
 
-## 🎯 Problem Statement
-Given a movie review, automatically determine whether the sentiment expressed is **positive** or **negative**.
-
----
-
-## 🧠 Model & Approach
+## 🚀 Features
 - Tokenization and padding of text sequences
-- Word embeddings for text representation
-- Recurrent Neural Network (RNN) for sequence learning
-- Binary classification using sigmoid activation
+- Word embeddings
+- Simple RNN model
+- Flask/Streamlit-based interface (app.py) to test live inputs
+- Trained model included
 
 ---
 
 ## 🛠️ Tech Stack
 - **Python**
-- **TensorFlow / Keras**
+- **TensorFlow/Keras**
 - **NumPy**
 - **Pandas**
 - **NLTK**
 - **Jupyter Notebook**
+- **Streamlit / Flask (optional)**
 
 ---
 
 ## 📂 Project Structure
 ```text
 IMDB-Sentiment-Analysis-RNN/
-│
-├── data/                   # Dataset files
-├── model/                  # Saved model files
-├── IMDB_Sentiment_Analysis.ipynb
-├── requirements.txt
-└── README.md
+├── Sentiment_annalysis_using_RNN_.ipynb   # Core notebook
+├── app.py                                 # Web/terminal interface
+├── imdb_rnn_model.h5                      # Trained model
+├── requirements.txt                       # Dependencies
+└── README.md                              # Project documentation
 
-🚀 How to Run the Project
+🧪 Model Results
+| Evaluation     | Score   |
+| -------------- | ------- |
+| Train Accuracy | ~90%    |
+| Test Accuracy  | ~85–88% |
 
-1. Clone the repository:
+🧠 How to Run
 
+1.Clone the repo:
 git clone https://github.com/amritgupta0680/IMDB-Sentiment-Analysis-RNN.git
 
-
-2. Install dependencies:
-
+2.Install dependencies:
 pip install -r requirements.txt
 
-
-3. Run the notebook:
-
+3.Run the notebook:
 jupyter notebook
 
-📊 Results
+4.Run the app:
+streamlit run app.py
 
-The RNN model successfully learns sentiment patterns from IMDB reviews and achieves reliable accuracy on test data.
+📊 Future Improvements
 
-🔮 Future Improvements
+Replace RNN with LSTM/GRU
 
-Replace RNN with LSTM or GRU
+Add attention or pretrained embeddings (e.g., GloVe/BERT)
 
-Add attention mechanism
+Deploy as web app
 
-Improve accuracy with hyperparameter tuning
-
-Deploy as a web application
+Add unit tests
 
 👤 Author
 
