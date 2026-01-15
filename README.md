@@ -50,7 +50,7 @@ IMDB-Sentiment-Analysis-RNN/
 git clone https://github.com/amritgupta0680/IMDB-Sentiment-Analysis-RNN.git
 
 2.Install dependencies:
-pip install -r requirements.txt
+pip install #required libraries
 
 3.Run the notebook:
 jupyter notebook
